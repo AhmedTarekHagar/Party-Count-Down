@@ -1,19 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Egyptian Party</title>
+    <link rel="shortcut icon" href="images/party_favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
-    
-    
+
+    <section id="home">
+        <div id="sidebar" class="sidebar w-25 bg-dark position-fixed vh-100 sidebar-hide">
+            <a id="closeButton" class="text-light fs-4 fw-bold position-absolute end-0 top-0 pt-3 pe-3"
+                role="button">X</a>
+            <div class="h-100 d-flex flex-column align-items-center justify-content-center gap-3 fs-3">
+                <a href="#home">Home</a>
+                <a href="#countDown">Duration</a>
+                <a href="#singers">Details</a>
+                <a href="#contactUs">Contact</a>
+            </div>
+        </div>
+
+        <div id="homeContent"
+            class="text-light h-100 d-flex justify-content-center align-items-center flex-column fs-3">
+            <span id="openButton" role="button" class="position-absolute fs-3 fw-bolder ps-3">☰ Open</span>
+            <h1>Egyptian Party</h1>
+            <p>let's have fun</p>
+        </div>
+    </section>
+
+    <section id="singers" class="py-5">
+        <div class="my-5 w-50 mx-auto text-center fs-3 fw-semibold">
+            <div>
+                <div class="head bg-danger bg-opacity-25" role="button">
+                    Singer One
+                </div>
+                <div class="body active bg-secondary bg-opacity-75">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ducimus ea placeat doloremque pariatur
+                    vel repellendus quo modi harum, ab maxime corrupti dolores fuga quia voluptatum consequuntur
+                    sapiente delectus, similique est provident aut, hic quam debitis? Distinctio cum ea minus ut,
+                    aliquid odit consectetur quas earum, iure suscipit tempora dolore.
+                </div>
+                <div class="head bg-danger bg-opacity-25" role="button">
+                    Singer Two
+                </div>
+                <div class="body bg-secondary bg-opacity-75">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ducimus ea placeat doloremque pariatur
+                    vel repellendus quo modi harum, ab maxime corrupti dolores fuga quia voluptatum consequuntur
+                    sapiente delectus, similique est provident aut, hic quam debitis? Distinctio cum ea minus ut,
+                    aliquid odit consectetur quas earum, iure suscipit tempora dolore.
+                </div>
+                <div class="head bg-danger bg-opacity-25" role="button">
+                    Singer Three
+                </div>
+                <div class="body bg-secondary bg-opacity-75">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ducimus ea placeat doloremque pariatur
+                    vel repellendus quo modi harum, ab maxime corrupti dolores fuga quia voluptatum consequuntur
+                    sapiente delectus, similique est provident aut, hic quam debitis? Distinctio cum ea minus ut,
+                    aliquid odit consectetur quas earum, iure suscipit tempora dolore.
+                </div>
+                <div class="head bg-danger bg-opacity-25" role="button">
+                    Singer Four
+                </div>
+                <div class="body bg-secondary bg-opacity-75">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ducimus ea placeat doloremque pariatur
+                    vel repellendus quo modi harum, ab maxime corrupti dolores fuga quia voluptatum consequuntur
+                    sapiente delectus, similique est provident aut, hic quam debitis? Distinctio cum ea minus ut,
+                    aliquid odit consectetur quas earum, iure suscipit tempora dolore.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5" id="countDown">
+        <div class="row p-5">
+            <div class="counter text-center fs-1 text-light align-items-center p-5 col-md-3 h-100 border border-2 border-light"
+                id="days"></div>
+            <div class="counter text-center fs-1 text-light align-items-center p-5 col-md-3 h-100 border border-2 border-light"
+                id="hours"></div>
+            <div class="counter text-center fs-1 text-light align-items-center p-5 col-md-3 h-100 border border-2 border-light"
+                id="minutes"></div>
+            <div class="counter text-center fs-1 text-light align-items-center p-5 col-md-3 h-100 border border-2 border-light"
+                id="seconds"></div>
+        </div>
+    </section>
+
+    <section id="contactUs" class="p-5">
+        <div class="container p-5">
+            <h2 class="text-uppercase fw-bold">join us</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, praesentium?</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="fw-bolder text-uppercase">Contact info</h3>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur pariatur delectus
+                        culpa quod debitis repellat quaerat inventore incidunt beatae velit!</p>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="row g-3">
+                            <input class="w-100" type="text">
+                            <input class="w-100" type="email">
+                            <textarea id="message" cols="30" rows="10"></textarea>
+                            <p><span id="characterCounter">100</span> character remaining</p>
+                            <button type="button" id="messageButton" class="btn btn-danger w-25 rounded-0">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
