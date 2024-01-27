@@ -1,4 +1,3 @@
-/// <reference types="../@types/jquery" />
 
 // sidebar
 $('#closeButton').on('click', function () {
